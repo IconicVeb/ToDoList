@@ -1,0 +1,62 @@
+body {
+    background: grey;
+    font-family: Tahoma;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.txt {
+    color: black;
+}
+
+.app {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+}
+
+.list-container {
+    padding: 0 20px;
+}
+
+.list > * {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: #f7df1d;
+    font-size: 0.7rem;
+    border: unset;
+    color: #3f3f3f;
+    border-radius: 8px;
+}
+
+.delete-btn {
+    padding: 6px 8px;
+    font-size: 0.5rem;
+    font-weight: 700;
+    border-radius: 5px;
+    background: #ff4d4d;
+    color: white;
+}
+
+.btns-container > * {
+    flex: 1 1;
+}
+
+
+
