@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Список задач</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To Do List</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container mb-5">
-    <nav class="nav">
-    </nav>
+<div class="container">
+    <h1>To Do List</h1>
+    <table class="task-table">
+        <thead>
+            <tr>
+                <th>Задача</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody id="taskList"></tbody>
+    </table>
+    <div class="task-input-container">
+        <input type="text" id="taskInput" class="task-input" placeholder="Добавить задачу..." onkeypress="handleKeyPress(event)">
+        <button onclick="addTask()" class="add-task-btn">Добавить</button>
+    </div>
 </div>
-<div class="container" id="todo-app">
-</div>
+
 <script src="script.js"></script>
 </body>
 </html>
